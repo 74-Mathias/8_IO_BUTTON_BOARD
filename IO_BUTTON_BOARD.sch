@@ -1597,63 +1597,20 @@ Connection ~ 8350 4350
 Connection ~ 7950 3900
 Connection ~ 7550 3450
 Connection ~ 7150 3000
-$Comp
-L CONN_01X08 P?
-U 1 1 5C545CC4
-P 11050 1000
-F 0 "P?" H 11050 1450 50  0000 C CNN
-F 1 "INPUT_PINS" V 11150 1000 50  0000 C CNN
-F 2 "" H 11050 1000 50  0000 C CNN
-F 3 "" H 11050 1000 50  0000 C CNN
-	1    11050 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 1950 7050 1950
-Wire Wire Line
-	7050 1950 7050 650 
-Wire Wire Line
-	7050 650  10850 650 
-Wire Wire Line
-	10850 750  7450 750 
-Wire Wire Line
-	7450 750  7450 1950
 Wire Wire Line
 	7450 1950 7550 1950
 Wire Wire Line
 	7950 1950 7850 1950
 Wire Wire Line
-	7850 1950 7850 850 
-Wire Wire Line
-	7850 850  10850 850 
-Wire Wire Line
-	10850 950  8250 950 
-Wire Wire Line
-	8250 950  8250 1950
-Wire Wire Line
 	8250 1950 8350 1950
 Wire Wire Line
 	8750 1950 8650 1950
 Wire Wire Line
-	8650 1950 8650 1050
-Wire Wire Line
-	8650 1050 10850 1050
-Wire Wire Line
-	10850 1150 9050 1150
-Wire Wire Line
-	9050 1150 9050 1950
-Wire Wire Line
 	9050 1950 9150 1950
 Wire Wire Line
 	9550 1950 9450 1950
-Wire Wire Line
-	9450 1950 9450 1250
-Wire Wire Line
-	9450 1250 10850 1250
-Wire Wire Line
-	10850 1350 9850 1350
-Wire Wire Line
-	9850 1350 9850 1950
 Wire Wire Line
 	9850 1950 9950 1950
 Wire Wire Line

@@ -34,7 +34,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "INPUT_BOARD"
+Title "LOGICAL_SENSOR_8_INPUT_BOARD"
 Date "2019-01-25"
 Rev "1.0"
 Comp "Mathias DELAHAYE"
