@@ -1,4 +1,4 @@
-update=Wed 30 Jan 2019 10:07:46 PM CET
+update=Wed 13 Feb 2019 09:56:55 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,6 +59,7 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/mathias/Documents/CDFR/IO-BUTTON_BOARD-1-00/IO-BUTTON_BOARD-cache
+LibName31=/home/mathias/Documents/KiCAD/devices
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
