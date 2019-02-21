@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/mathias/Documents/CDFR/IO_BUTTON_BOARD/IO_BUTTON_BOARD.sch)
-    (date "Thu 14 Feb 2019 05:55:03 PM CET")
+    (date "Thu 21 Feb 2019 10:56:14 PM CET")
     (tool "Eeschema 4.0.5+dfsg1-4")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -861,14 +861,14 @@
         (pin (num 2) (name OUT) (type output))
         (pin (num 3) (name IN_B) (type input)))))
   (libraries
-    (library (logical philips)
-      (uri /usr/share/kicad/library/philips.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
-    (library (logical 74xx)
-      (uri /usr/share/kicad/library/74xx.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical 74xx)
+      (uri /usr/share/kicad/library/74xx.lib))
+    (library (logical philips)
+      (uri /usr/share/kicad/library/philips.lib))
     (library (logical IO_BUTTON_BOARD-cache)
       (uri /home/mathias/Documents/CDFR/IO_BUTTON_BOARD/IO_BUTTON_BOARD-cache.lib)))
   (nets
