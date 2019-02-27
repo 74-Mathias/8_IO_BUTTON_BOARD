@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 197)
+    (start_pass_no 1524)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -53,7 +53,6 @@
     "kicad_default" "Via[0-1]_600:400_um-kicad_default"
   )
   (class default
-    "/REVERSE_PULL"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -70,10 +69,10 @@
     "Net-(D18-Pad1)" "Net-(D19-Pad1)" /SCL /SDA "/IN_0" "/IN_1" "/IN_2" "/IN_3"
     "/IN_4" "/IN_5" "/IN_6" "/IN_7" "Net-(Q1-Pad1)" "Net-(Q1-Pad3)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)"
     "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(Q9-Pad1)" "Net-(Q10-Pad1)" "Net-(Q11-Pad1)"
-    "Net-(Q12-Pad1)" "Net-(Q13-Pad1)" "Net-(R10-Pad1)" "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)" "Net-(R31-Pad1)"
-    "Net-(R32-Pad1)" "Net-(R33-Pad1)" "Net-(R34-Pad1)" "Net-(R43-Pad2)" "Net-(R44-Pad2)" "Net-(R45-Pad2)" "Net-(R46-Pad2)" "Net-(R47-Pad2)"
-    "Net-(R48-Pad2)" "Net-(R49-Pad2)" "Net-(R50-Pad2)" "Net-(S1-Pad2)" "Net-(S2-Pad2)" "Net-(S3-Pad2)" "Net-(S4-Pad2)" "Net-(S5-Pad2)"
-    "Net-(S6-Pad2)" "Net-(S7-Pad2)" "Net-(S8-Pad2)" "Net-(SW1-Pad6)" "Net-(SW1-Pad7)" "Net-(SW1-Pad8)"
+    "Net-(Q12-Pad1)" "Net-(Q13-Pad1)" "/REVERSE_PULL" "Net-(R10-Pad1)" "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)"
+    "Net-(R31-Pad1)" "Net-(R32-Pad1)" "Net-(R33-Pad1)" "Net-(R34-Pad1)" "Net-(R43-Pad2)" "Net-(R44-Pad2)" "Net-(R45-Pad2)" "Net-(R46-Pad2)"
+    "Net-(R47-Pad2)" "Net-(R48-Pad2)" "Net-(R49-Pad2)" "Net-(R50-Pad2)" "Net-(S1-Pad2)" "Net-(S2-Pad2)" "Net-(S3-Pad2)" "Net-(S4-Pad2)"
+    "Net-(S5-Pad2)" "Net-(S6-Pad2)" "Net-(S7-Pad2)" "Net-(S8-Pad2)" "Net-(SW1-Pad6)" "Net-(SW1-Pad7)" "Net-(SW1-Pad8)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -83,8 +82,8 @@
       (use_layer F.Cu B.Cu)
     )
   )
-  (class alim
-    +5V GND "Net-(D2-Pad2)" VCC
+  (class class1
+    GND +5V "Net-(D2-Pad2)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -94,13 +93,13 @@
       (use_layer F.Cu B.Cu)
     )
   )
-  (class out
+  (class class2
     "/OUT_0" "/OUT_1" "/OUT_2" "/OUT_3" "/OUT_4" "/OUT_5" "/OUT_6" "/OUT_7"
     "/CONTACT_LANE" "/PULL_LANE"
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 325.0)
+      (width 550.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
