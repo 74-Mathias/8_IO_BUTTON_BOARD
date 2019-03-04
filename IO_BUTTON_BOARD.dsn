@@ -33,9 +33,9 @@
             177500 -100670  176710 -100302  175868 -100076  175000 -100000
             105000 -100000  105000 -100000)
     )
-    (plane GND (polygon B.Cu 0  180000 -133000  180000 -140000  100500 -140000  100000 -140000
+    (plane @:no_net_0 (polygon B.Cu 0  180000 -133000  180000 -140000  100500 -140000  100000 -140000
             100000 -100000  180000 -100000))
-    (plane +5V (polygon F.Cu 0  180000 -140000  180000 -100000  100000 -100000  100000 -140000))
+    (plane @:no_net_1 (polygon F.Cu 0  180000 -140000  180000 -100000  100000 -100000  100000 -140000))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -487,14 +487,13 @@
     )
   )
   (network
-    (net +5V
-      (pins C1-1 D2-1 P3-1 P4-1 P5-1 P6-1 P7-1 P8-1 P9-1 P10-1 Q2-3 Q4-3 Q6-3 Q7-3
-        Q8-3 Q9-3 Q10-3 Q11-3 Q12-3 R4-1 R7-1 R10-2 SW1-4 U1-16 U2-14 U3-14 Q13-3)
+    (net @:no_net_0
+    )
+    (net @:no_net_1
     )
     (net GND
-      (pins C1-2 D1-1 D3-1 P1-4 P2-4 P3-4 P4-4 P5-4 P6-4 P7-4 P8-4 P9-4 P10-4 Q1-2
-        Q3-2 Q5-2 R1-2 R11-2 R12-2 R13-2 R14-2 R15-2 R16-2 R17-2 R18-2 R19-2 R20-2
-        R21-2 R22-2 R23-2 R24-2 R25-2 R26-2 SW1-1 SW1-2 SW1-3 U1-8 U2-7 U3-7)
+      (pins D1-1 D3-1 Q1-2 R1-2 R11-2 R12-2 R13-2 R14-2 R15-2 R16-2 R17-2 R18-2 R19-2
+        R20-2 R21-2 R22-2 R23-2 R24-2 R25-2 R26-2 SW1-1 SW1-2 SW1-3 U1-8 U2-7 U3-7)
     )
     (net "Net-(D1-Pad2)"
       (pins D1-2 R3-2)
@@ -554,49 +553,49 @@
       (pins D11-1 R18-1)
     )
     (net /OUT_0
-      (pins D12-2 P3-2 Q6-2)
+      (pins P3-2)
     )
     (net "Net-(D12-Pad1)"
       (pins D12-1 R19-1)
     )
     (net /OUT_1
-      (pins D13-2 P4-2 Q7-2)
+      (pins P4-2)
     )
     (net "Net-(D13-Pad1)"
       (pins D13-1 R20-1)
     )
     (net /OUT_2
-      (pins D14-2 P5-2 Q8-2)
+      (pins P5-2)
     )
     (net "Net-(D14-Pad1)"
       (pins D14-1 R21-1)
     )
     (net /OUT_3
-      (pins D15-2 P6-2 Q9-2)
+      (pins P6-2)
     )
     (net "Net-(D15-Pad1)"
       (pins D15-1 R22-1)
     )
     (net /OUT_4
-      (pins D16-2 P7-2 Q10-2)
+      (pins P7-2)
     )
     (net "Net-(D16-Pad1)"
       (pins D16-1 R23-1)
     )
     (net /OUT_5
-      (pins D17-2 P8-2 Q11-2)
+      (pins P8-2)
     )
     (net "Net-(D17-Pad1)"
       (pins D17-1 R24-1)
     )
     (net /OUT_6
-      (pins D18-2 P9-2 Q12-2)
+      (pins P9-2)
     )
     (net "Net-(D18-Pad1)"
       (pins D18-1 R25-1)
     )
     (net /OUT_7
-      (pins D19-2 P10-2 Q13-2)
+      (pins P10-2)
     )
     (net "Net-(D19-Pad1)"
       (pins D19-1 R26-1)
@@ -650,8 +649,7 @@
       (pins Q4-1 R8-1)
     )
     (net /PULL_LANE
-      (pins Q4-2 Q5-3 R43-1 R44-1 R45-1 R46-1 R47-1 R48-1 R49-1 R50-1 U2-2 U2-5 U2-13
-        U2-10 U3-2 U3-5 U3-13 U3-10)
+      (pins Q4-2 Q5-3 R43-1 R44-1 R45-1 R46-1 R47-1 R48-1 R49-1 R50-1)
     )
     (net "Net-(Q5-Pad1)"
       (pins Q5-1 R9-2)
@@ -767,15 +765,62 @@
     (net "Net-(SW1-Pad8)"
       (pins SW1-8 U1-1)
     )
-    (class kicad_default "" +5V /CONTACT_LANE /IN_0 /IN_1 /IN_2 /IN_3 /IN_4
-      /IN_5 /IN_6 /IN_7 /OUT_0 /OUT_1 /OUT_2 /OUT_3 /OUT_4 /OUT_5 /OUT_6 /OUT_7
-      /PULL_LANE /REVERSE_PULL /SCL /SDA GND "Net-(D1-Pad2)" "Net-(D10-Pad1)"
-      "Net-(D10-Pad2)" "Net-(D11-Pad1)" "Net-(D11-Pad2)" "Net-(D12-Pad1)"
-      "Net-(D13-Pad1)" "Net-(D14-Pad1)" "Net-(D15-Pad1)" "Net-(D16-Pad1)"
-      "Net-(D17-Pad1)" "Net-(D18-Pad1)" "Net-(D19-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad2)"
-      "Net-(D4-Pad1)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad1)"
-      "Net-(D6-Pad2)" "Net-(D7-Pad1)" "Net-(D7-Pad2)" "Net-(D8-Pad1)" "Net-(D8-Pad2)"
-      "Net-(D9-Pad1)" "Net-(D9-Pad2)" "Net-(Q1-Pad1)" "Net-(Q1-Pad3)" "Net-(Q10-Pad1)"
+    (net /D_OUT_0
+      (pins D12-2 Q6-2)
+    )
+    (net /D_OUT_1
+      (pins D13-2 Q7-2)
+    )
+    (net /D_OUT_2
+      (pins D14-2 Q8-2)
+    )
+    (net /D_OUT_3
+      (pins D15-2 Q9-2)
+    )
+    (net /D_OUT_4
+      (pins D16-2 Q10-2)
+    )
+    (net /D_OUT_5
+      (pins D17-2 Q11-2)
+    )
+    (net /D_OUT_6
+      (pins D18-2 Q12-2)
+    )
+    (net /D_OUT_7
+      (pins D19-2 Q13-2)
+    )
+    (net /PULL_LANE_D
+      (pins U2-2 U2-5 U2-13 U2-10 U3-2 U3-5 U3-13 U3-10)
+    )
+    (net VCC
+      (pins R4-1 R7-1 R10-2 SW1-4 U1-16 U2-14 U3-14)
+    )
+    (net /5V_PWR
+      (pins C1-1 D2-1 P3-1 P4-1 P5-1 P6-1 P7-1 P8-1 P9-1 P10-1 Q2-3 Q4-3 Q6-3 Q7-3
+        Q8-3 Q9-3 Q10-3 Q11-3 Q12-3 Q13-3)
+    )
+    (net /GND_PWR
+      (pins C1-2 P1-4 P2-4 P3-4 P4-4 P5-4 P6-4 P7-4 P8-4 P9-4 P10-4 Q3-2 Q5-2)
+    )
+    (class kicad_default "" +5V GNDPWR
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class digital_signal /D_OUT_0 /D_OUT_1 /D_OUT_2 /D_OUT_3 /D_OUT_4 /D_OUT_5
+      /D_OUT_6 /D_OUT_7 /IN_0 /IN_1 /IN_2 /IN_3 /IN_4 /IN_5 /IN_6 /IN_7 /PULL_LANE_D
+      /REVERSE_PULL /SCL /SDA "Net-(D1-Pad2)" "Net-(D10-Pad1)" "Net-(D10-Pad2)"
+      "Net-(D11-Pad1)" "Net-(D11-Pad2)" "Net-(D12-Pad1)" "Net-(D13-Pad1)"
+      "Net-(D14-Pad1)" "Net-(D15-Pad1)" "Net-(D16-Pad1)" "Net-(D17-Pad1)"
+      "Net-(D18-Pad1)" "Net-(D19-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad1)" "Net-(D4-Pad2)"
+      "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad1)" "Net-(D6-Pad2)" "Net-(D7-Pad1)"
+      "Net-(D7-Pad2)" "Net-(D8-Pad1)" "Net-(D8-Pad2)" "Net-(D9-Pad1)" "Net-(D9-Pad2)"
+      "Net-(P10-Pad4)" "Net-(P4-Pad4)" "Net-(P5-Pad4)" "Net-(P6-Pad4)" "Net-(P7-Pad4)"
+      "Net-(P8-Pad4)" "Net-(P9-Pad4)" "Net-(Q1-Pad1)" "Net-(Q1-Pad3)" "Net-(Q10-Pad1)"
       "Net-(Q11-Pad1)" "Net-(Q12-Pad1)" "Net-(Q13-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)"
       "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)"
       "Net-(Q9-Pad1)" "Net-(R10-Pad1)" "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)"
@@ -784,12 +829,39 @@
       "Net-(R46-Pad2)" "Net-(R47-Pad2)" "Net-(R48-Pad2)" "Net-(R49-Pad2)"
       "Net-(R50-Pad2)" "Net-(S1-Pad2)" "Net-(S2-Pad2)" "Net-(S3-Pad2)" "Net-(S4-Pad2)"
       "Net-(S5-Pad2)" "Net-(S6-Pad2)" "Net-(S7-Pad2)" "Net-(S8-Pad2)" "Net-(SW1-Pad6)"
-      "Net-(SW1-Pad7)" "Net-(SW1-Pad8)" VCC
+      "Net-(SW1-Pad7)" "Net-(SW1-Pad8)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
       (rule
         (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class high_current /OUT_0 /OUT_1 /OUT_2 /OUT_3 /OUT_4 /OUT_5 /OUT_6 /OUT_7
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 500)
+        (clearance 200.1)
+      )
+    )
+    (class low_current /CONTACT_LANE /PULL_LANE GND VCC
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 200.1)
+      )
+    )
+    (class power_track /5V_PWR /GND_PWR "Net-(D2-Pad2)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 800)
         (clearance 200.1)
       )
     )
