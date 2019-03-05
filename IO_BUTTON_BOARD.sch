@@ -79,17 +79,17 @@ $EndComp
 $Comp
 L CONN_01X04 P2
 U 1 1 5C4ADA31
-P 650 9850
-F 0 "P2" H 650 10100 50  0000 C CNN
-F 1 "I2C" V 750 9850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 9850 50  0001 C CNN
-F 3 "" H 650 9850 50  0000 C CNN
-	1    650  9850
+P 650 9750
+F 0 "P2" H 650 10000 50  0000 C CNN
+F 1 "I2C" V 750 9750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 9750 50  0001 C CNN
+F 3 "" H 650 9750 50  0000 C CNN
+	1    650  9750
 	-1   0    0    1   
 $EndComp
-Text HLabel 950  9900 2    60   BiDi ~ 0
+Text HLabel 950  9600 2    60   BiDi ~ 0
 SDA
-Text HLabel 950  10000 2    60   BiDi ~ 0
+Text HLabel 950  9700 2    60   BiDi ~ 0
 SCL
 Text HLabel 3700 4700 0    60   BiDi ~ 0
 SCL
@@ -98,17 +98,17 @@ SDA
 $Comp
 L CONN_01X04 P1
 U 1 1 5C4ADDFA
-P 650 9300
-F 0 "P1" H 650 9550 50  0000 C CNN
-F 1 "I2C" V 750 9300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 9300 50  0001 C CNN
-F 3 "" H 650 9300 50  0000 C CNN
-	1    650  9300
+P 650 9200
+F 0 "P1" H 650 9450 50  0000 C CNN
+F 1 "I2C" V 750 9200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 9200 50  0001 C CNN
+F 3 "" H 650 9200 50  0000 C CNN
+	1    650  9200
 	-1   0    0    1   
 $EndComp
-Text HLabel 950  9350 2    60   BiDi ~ 0
+Text HLabel 950  9050 2    60   BiDi ~ 0
 SDA
-Text HLabel 950  9450 2    60   BiDi ~ 0
+Text HLabel 950  9150 2    60   BiDi ~ 0
 SCL
 $Comp
 L SW_PUSH_SMALL SW2
@@ -881,7 +881,7 @@ F 1 "IO_0" V 16000 900 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 900 50  0001 C CNN
 F 3 "" H 15900 900 50  0000 C CNN
 	1    15900 900 
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P4
@@ -892,7 +892,7 @@ F 1 "IO_1" V 16000 1650 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 1650 50  0001 C CNN
 F 3 "" H 15900 1650 50  0000 C CNN
 	1    15900 1650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P5
@@ -903,7 +903,7 @@ F 1 "IO_2" V 16000 2400 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 2400 50  0001 C CNN
 F 3 "" H 15900 2400 50  0000 C CNN
 	1    15900 2400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P6
@@ -914,7 +914,7 @@ F 1 "IO_3" V 16000 3150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 3150 50  0001 C CNN
 F 3 "" H 15900 3150 50  0000 C CNN
 	1    15900 3150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P7
@@ -925,7 +925,7 @@ F 1 "IO_4" V 16000 3900 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 3900 50  0001 C CNN
 F 3 "" H 15900 3900 50  0000 C CNN
 	1    15900 3900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P8
@@ -936,7 +936,7 @@ F 1 "IO_5" V 16000 4650 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 4650 50  0001 C CNN
 F 3 "" H 15900 4650 50  0000 C CNN
 	1    15900 4650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P9
@@ -947,7 +947,7 @@ F 1 "IO_6" V 16000 5400 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 5400 50  0001 C CNN
 F 3 "" H 15900 5400 50  0000 C CNN
 	1    15900 5400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L CONN_01X04 P10
@@ -958,7 +958,7 @@ F 1 "IO_7" V 16000 6150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 15900 6150 50  0001 C CNN
 F 3 "" H 15900 6150 50  0000 C CNN
 	1    15900 6150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L R_Small R35
@@ -1635,7 +1635,7 @@ Wire Wire Line
 	2650 5000 2350 5000
 Connection ~ 2350 5100
 Wire Wire Line
-	850  9700 950  9700
+	850  9900 950  9900
 Wire Wire Line
 	1500 9800 850  9800
 Wire Wire Line
@@ -1643,17 +1643,17 @@ Wire Wire Line
 Wire Wire Line
 	3800 4800 3700 4800
 Wire Wire Line
-	850  9900 950  9900
+	850  9600 950  9600
 Wire Wire Line
-	850  10000 950  10000
-Wire Wire Line
-	850  9150 950  9150
-Wire Wire Line
-	850  9250 1650 9250
+	850  9700 950  9700
 Wire Wire Line
 	850  9350 950  9350
 Wire Wire Line
-	850  9450 950  9450
+	850  9250 1650 9250
+Wire Wire Line
+	850  9050 950  9050
+Wire Wire Line
+	850  9150 950  9150
 Wire Wire Line
 	2800 9650 2800 9550
 Wire Wire Line
@@ -2289,9 +2289,9 @@ Text HLabel 2050 9150 1    60   Input ~ 0
 5V_PWR
 Text HLabel 2050 10050 3    60   Input ~ 0
 GND_PWR
-Text HLabel 950  9700 2    60   Input ~ 0
+Text HLabel 950  9900 2    60   Input ~ 0
 GND_PWR
-Text HLabel 950  9150 2    60   Input ~ 0
+Text HLabel 950  9350 2    60   Input ~ 0
 GND_PWR
 Wire Wire Line
 	2500 9150 2500 9250
