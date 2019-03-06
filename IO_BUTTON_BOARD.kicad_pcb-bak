@@ -3,7 +3,7 @@
   (general
     (links 235)
     (no_connects 0)
-    (area 99.924999 99.924999 180.075001 140.075001)
+    (area 95.442857 97.525 184.557143 142.575)
     (thickness 1.6)
     (drawings 27)
     (tracks 1340)
@@ -13,6 +13,13 @@
   )
 
   (page A4)
+  (title_block
+    (title 8_IO_BUTTON_BOARD)
+    (date 2019-03-06)
+    (rev v1.0)
+    (company "Mathias DELAHAYE")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -95,7 +102,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory ../../../tmp/8_IO_BUTTON_BOARD.wiki/img/))
   )
 
   (net 0 "")
