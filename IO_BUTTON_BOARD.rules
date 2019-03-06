@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2342)
+    (start_pass_no 7127)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -107,8 +107,7 @@
     "Net-(Q12-Pad1)" "Net-(Q13-Pad1)" "/REVERSE_PULL" "Net-(R10-Pad1)" "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)"
     "Net-(R31-Pad1)" "Net-(R32-Pad1)" "Net-(R33-Pad1)" "Net-(R34-Pad1)" "Net-(R43-Pad2)" "Net-(R44-Pad2)" "Net-(R45-Pad2)" "Net-(R46-Pad2)"
     "Net-(R47-Pad2)" "Net-(R48-Pad2)" "Net-(R49-Pad2)" "Net-(R50-Pad2)" "Net-(S1-Pad2)" "Net-(S2-Pad2)" "Net-(S3-Pad2)" "Net-(S4-Pad2)"
-    "Net-(S5-Pad2)" "Net-(S6-Pad2)" "Net-(S7-Pad2)" "Net-(S8-Pad2)" "Net-(SW1-Pad6)" "Net-(SW1-Pad7)" "Net-(SW1-Pad8)" "/D_OUT_0"
-    "/D_OUT_1" "/D_OUT_2" "/D_OUT_3" "/D_OUT_4" "/D_OUT_5" "/D_OUT_6" "/D_OUT_7" "/PULL_LANE_D"
+    "Net-(S5-Pad2)" "Net-(S6-Pad2)" "Net-(S7-Pad2)" "Net-(S8-Pad2)" "Net-(SW1-Pad6)" "Net-(SW1-Pad7)" "Net-(SW1-Pad8)"
     (clearance_class "digital_signal")
     (via_rule digital_signal)
     (rule
@@ -130,7 +129,7 @@
     )
   )
   (class "low_current"
-    GND "/CONTACT_LANE" "/PULL_LANE" VCC
+    "/CONTACT_LANE" "/PULL_LANE"
     (clearance_class "low_current")
     (via_rule low_current)
     (rule
@@ -141,11 +140,11 @@
     )
   )
   (class "power_track"
-    "Net-(D2-Pad2)" "/5V_PWR" "/GND_PWR"
+    GND "Net-(D2-Pad2)" VCC
     (clearance_class "power_track")
     (via_rule power_track)
     (rule
-      (width 800.0)
+      (width 1000.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
